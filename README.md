@@ -2,7 +2,7 @@
 This repository contains work completed during Spring 2020 in Dr. Murray's DIG4639: Mobile Development class.
 
 
-this is a change in my local repository 
+this is a change in my local repository.
 
 
 ## Structure

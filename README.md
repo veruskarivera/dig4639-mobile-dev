@@ -17,5 +17,3 @@ https://www.linkedin.com/in/veruska-rivera-23098a15a/
 
 
 I want to be a Front End Developer and a Graphic Designer. I am looking to work in the fashion industry so I can combine everything that I am passionate for in one place.
-
-

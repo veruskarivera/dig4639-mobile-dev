@@ -1,0 +1,93 @@
+[
+  {
+    "question": "What is Veruska's favorite type of music?",
+    "possibleAnswers":
+    [
+      {"text":"Hip-Hop",
+      "correct":false },
+
+      {"text":"Reggae",
+        "correct":false
+      },
+      {"text":"Pop",
+        "correct":false
+      },
+      
+      {"text":"Techno",
+        "correct": true
+      }
+    ]
+  },
+{
+  "question": "Where is Veruska from?",
+  "possibleAnswers":
+  [
+    {"text":"Russia",
+    "correct":false },
+
+    {"text":"Venezuela",
+      "correct":true
+    },
+    {"text":"Spain",
+      "correct":false
+    },
+    {"text":"USA",
+      "correct": false
+    }
+  ]
+},
+{
+  "question": "What is Veruska's favorite movie?",
+  "possibleAnswers":
+  [
+    {"text":"Pulp Fiction",
+    "correct":false },
+
+    {"text":"Shawshank Redemption",
+      "correct":false
+    },
+    {"text":"Trainspotting",
+      "correct":true
+    },
+    {"text":"Salo or 120 days of Sodoma",
+      "correct": false
+    }
+  ]
+}, 
+{
+  "question": "What is Veruska's favorite type of food?",
+  "possibleAnswers":
+  [
+    {"text":"Mexican",
+    "correct":false },
+
+    {"text":"Lebanese",
+      "correct":true
+    },
+    {"text":"Italian",
+      "correct":false
+    },
+    {"text":"American",
+      "correct": false
+    }
+  ]
+},
+{
+  "question": "What is Veruska's favorite color?",
+  "possibleAnswers":
+  [
+    {"text":"Black",
+    "correct":true },
+
+    {"text":"White",
+      "correct":false
+    },
+    {"text":"Yellow",
+      "correct":false
+    },
+    {"text":"Beige",
+      "correct": false
+    }
+  ]
+}
+]

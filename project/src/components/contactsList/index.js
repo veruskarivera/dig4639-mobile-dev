@@ -11,7 +11,7 @@ class ContactsList extends React.Component {
 
   componentDidMount() {
 
-    fetch("http://plato.mrl.ai:8080/contacts", {headers: {API: "leon"}})
+    fetch("http://plato.mrl.ai:8080/contacts", {headers: {API: "rivera"}})
     .then((res) => res.json())
     .then((data, ) => {
         console.log(data)

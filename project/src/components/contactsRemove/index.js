@@ -13,15 +13,15 @@ class ContactsRemove extends React.Component {
   constructor(props) {
     super(props);
 
-    //set input reference 
+
     this.textInput = React.createRef();
-    //track value of input state 
+
     this.state =this.state = {
       value: '',
     }
   }
 
-  //send header body 
+
   delVal= () => {
     let newHeaders = {...HEADERS,
       "method" : "POST",
@@ -32,14 +32,13 @@ class ContactsRemove extends React.Component {
       fetch("http://plato.mrl.ai:8080/contacts/remove", newHeaders)
       .then((res) => res.json())
       .then((data) => {
-        //set value state to input value
           this.setState({value:this.textInput.current.value})
           console.log(data)
     }
     , [])
   }
 
-//on submit event prevent default and run function 
+
   handleSubmit = e => {
     e.preventDefault();
     this.delVal()

@@ -1,0 +1,59 @@
+body{
+  background-image: url("app.jpeg");
+
+}
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.list {
+  background-color: #02661e;
+  text-align: center;
+  padding-top:40px;
+  padding-bottom: 40px;
+  margin-top:20px;
+}
+h1 {
+  color:#E9D758;
+  font-family: monospace;
+}
+h2 {
+  color: #FF8552;
+  font-family: monospace;
+}
+#top{
+  font-size: 38px;
+}
+
+p {
+  color: #E6E6E6;
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+label {
+  color:#eba38b;
+  font-family: monospace;
+  font-style: bold;
+  font-size: 1.2em;
+}
+
+input[type=text] {
+  font-family: monospace;
+  border: 2px ;
+  border-style: solid #E6E6E6;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #E9D758;
+  color:black;
+  padding: 12px 15px;
+  border: 2px;
+  border-style: solid #E9D758;
+  border-radius: 4px;
+  font-family: monospace;
+}

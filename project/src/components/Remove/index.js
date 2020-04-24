@@ -10,7 +10,6 @@ const HEADERS = {
 class Remove extends React.Component {
   constructor(props) {
     super(props);
-    this.inputData = React.createRef();
     this.state = {
       value: "",
       numberToBeDeleted: ""
@@ -25,7 +24,7 @@ class Remove extends React.Component {
         position: this.state.numberToBeDeleted
       })
     };
-   console.log("this is the header", newHeader);
+   //console.log("this is the header", newHeader);
     window.fetch("http://plato.mrl.ai:8080/contacts/remove", newHeader)
       .then(res => res.json())
       //.then(console.log)

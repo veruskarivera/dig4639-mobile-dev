@@ -11,8 +11,6 @@ const HEADERS = {
 class Add extends React.Component {
   constructor(props) {
     super(props);
-    this.input = React.createRef();
-    this.input2 = React.createRef();
     this.state = {
       contactName: "",
       contactNumber: ""
@@ -27,15 +25,15 @@ class Add extends React.Component {
         number: this.state.contactNumber,
       })
     };
-    window.fetch("http://plato.mrl.ai:8080/contacts/add", newHeader)
+    fetch("http://plato.mrl.ai:8080/contacts/add", newHeader)
       .then(res => res.json())
       .then(console.log)
       .then(()=>this.setState({contactName:" "}))
       .then(()=>this.setState({contactNumber:" "}));
   };
 
-  submitted = a => {
-    a.preventDefault();
+  submitted = m => {
+    m.preventDefault();
     this.newContact();
   };
 
@@ -53,7 +51,7 @@ class Add extends React.Component {
             value={this.state.contactName}
           />
           <br />
-          <label htmlFor="name">PHONE NUMBER:</label>
+          <label htmlFor="number">PHONE NUMBER:</label>
           <br />
           <input
             type="text"

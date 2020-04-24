@@ -7,12 +7,12 @@ body{
   width: 50%;
 }
 
-.list {
+.listContent {
   background-color: #02661e;
   text-align: center;
   padding-top:40px;
   padding-bottom: 40px;
-  margin-top:20px;
+
 }
 h1 {
   color:#E9D758;
@@ -22,7 +22,7 @@ h2 {
   color: #FF8552;
   font-family: monospace;
 }
-#top{
+#title{
   font-size: 38px;
 }
 
@@ -36,14 +36,14 @@ label {
   color:#eba38b;
   font-family: monospace;
   font-style: bold;
-  font-size: 1.2em;
+  font-size: 18px;
 }
 
 input[type=text] {
   font-family: monospace;
   border: 2px ;
   border-style: solid #E6E6E6;
-  width: 50%;
+  width: 25%;
   padding: 10px;
   margin: 10px;
   box-sizing: border-box;

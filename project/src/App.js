@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div class="center">
-        <div class="list">
+        <div class="listContent">
           <List />
           <Add />
           <Profile />

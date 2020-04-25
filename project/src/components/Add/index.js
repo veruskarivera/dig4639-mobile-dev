@@ -22,7 +22,7 @@ class Add extends React.Component {
       method: "POST",
       body: JSON.stringify({
         name: this.state.contactName,
-        number: this.state.contactNumber,
+        number: this.state.contactNumber
       })
     };
     fetch("http://plato.mrl.ai:8080/contacts/add", newHeader)
@@ -51,7 +51,7 @@ class Add extends React.Component {
             value={this.state.contactName}
           />
           <br />
-          <label htmlFor="number">PHONE NUMBER:</label>
+          <label htmlFor="name">PHONE NUMBER:</label>
           <br />
           <input
             type="text"
@@ -64,9 +64,6 @@ class Add extends React.Component {
         </form>
       </div>
     );
-  }
-  pageRefresh() {
-    //window.location.reload();
   }
 }
 export default Add;

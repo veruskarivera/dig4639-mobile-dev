@@ -11,7 +11,7 @@ export default function Profile () {
     .then((data) => {
         //console.log("here is the data", data)
       setProfile(data);
-    })
+    },[])
   });
 
     return (

@@ -31,9 +31,9 @@ class Remove extends React.Component {
       .then(() => this.setState({ numberToBeDeleted: "" }))
   };
 
-  pageRefresh() {
+  /*pageRefresh() {
     window.location.reload();
-  }
+  }*/
 
   submitted = m => {
     m.preventDefault();

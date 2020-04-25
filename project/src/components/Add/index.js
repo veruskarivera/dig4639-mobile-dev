@@ -27,13 +27,15 @@ class Add extends React.Component {
     };
     fetch("http://plato.mrl.ai:8080/contacts/add", newHeader)
       .then(res => res.json())
-      .then(console.log)
-      .then(()=>this.setState({contactName:" "}))
-      .then(()=>this.setState({contactNumber:" "}));
+      .then(response => {
+        this.setState({ contactName: " ", contactNumber: " " });
+        console.log(response);
+        this.props.update(new Date());
+      });
   };
 
-  submitted = m => {
-    m.preventDefault();
+  submitted = a => {
+    a.preventDefault();
     this.newContact();
   };
 

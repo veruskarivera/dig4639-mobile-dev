@@ -10,6 +10,7 @@ const HEADERS = {
 class Remove extends React.Component {
   constructor(props) {
     super(props);
+    this.inputData = React.createRef();
     this.state = {
       value: "",
       numberToBeDeleted: ""
@@ -24,16 +25,15 @@ class Remove extends React.Component {
         position: this.state.numberToBeDeleted
       })
     };
-   //console.log("this is the header", newHeader);
-    window.fetch("http://plato.mrl.ai:8080/contacts/remove", newHeader)
+   console.log("this is the header", newHeader);
+    fetch("http://plato.mrl.ai:8080/contacts/remove", newHeader)
       .then(res => res.json())
-      //.then(console.log)
-      .then(() => this.setState({ numberToBeDeleted: "" }))
+      .then( (response) => {
+      this.setState({ numberToBeDeleted: "" })
+      console.log(response)
+      this.props.update(new Date())
+    })
   };
-
-  /*pageRefresh() {
-    window.location.reload();
-  }*/
 
   submitted = m => {
     m.preventDefault();
